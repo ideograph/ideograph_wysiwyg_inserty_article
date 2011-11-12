@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Ideograph wysiwyg inserty article feature.
+ */
+
+include_once('ideograph_wysiwyg_inserty_article.features.inc');

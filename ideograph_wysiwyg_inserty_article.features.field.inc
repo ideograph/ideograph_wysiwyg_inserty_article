@@ -274,6 +274,7 @@ function ideograph_wysiwyg_inserty_article_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'alt_field' => 1,
+        'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
@@ -392,6 +393,7 @@ function ideograph_wysiwyg_inserty_article_field_default_fields() {
       'required' => 0,
       'settings' => array(
         'alt_field' => 1,
+        'default_image' => 0,
         'file_directory' => '',
         'file_extensions' => 'png gif jpg jpeg',
         'max_filesize' => '',
@@ -399,6 +401,20 @@ function ideograph_wysiwyg_inserty_article_field_default_fields() {
         'min_resolution' => '',
         'title_field' => 0,
         'user_register_form' => FALSE,
+        'wysiwyg_fields' => array(
+          'settings' => array(
+            'advanced' => array(
+              'delete' => 1,
+              'hide' => 1,
+            ),
+            'formatters' => array(
+              'image' => 'image',
+            ),
+            'icon' => 'd50522754f0bc7cc44d2f5231a467fe8',
+            'label' => 'Insert Image from Sources',
+          ),
+          'status' => 1,
+        ),
       ),
       'widget' => array(
         'active' => 1,
@@ -406,7 +422,7 @@ function ideograph_wysiwyg_inserty_article_field_default_fields() {
         'settings' => array(
           'filefield_sources' => array(
             'filefield_sources' => array(
-              'attach' => 'attach',
+              'attach' => 0,
               'imce' => 'imce',
               'reference' => 'reference',
               'remote' => 'remote',
